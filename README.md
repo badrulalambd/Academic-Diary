@@ -1,5 +1,8 @@
 # Academic-Diary
-This app is designed for academic purpose as student daily class note diary. Technology: Android studio, Java, JSON, Volley, Picasso library.
+## This app is designed for academic purpose as student daily class note diary. 
+## Technology: Android studio, Java, JSON, Volley, Picasso library.
+
+
 
 
 ![Screenshot_1](https://user-images.githubusercontent.com/105268491/209929802-61f8c07d-edbb-4f81-b6a9-ededd830cebd.png)
