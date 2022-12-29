@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    /////////////////////////////////////
+    //Top image......................
+    //.........................
+    <RelativeLayout
+        android:id="@+id/layout_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+        <ImageView
+            android:id="@+id/cover_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/boy"
+            android:background="#545"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tv_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample title textSample title textSample title text"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            android:background="#2F000000"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+
+    ///////////////////////////////////
+    //middle text area...................
+    //................................
+    <LinearLayout
+        android:id="@+id/linearlayout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_cover"
+        >
+        <TextView
+            android:id="@+id/tv_description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Though in your case it seems that you want to create a new drawable and assign it to your view."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    ///////////////////////////////////////
+    //......................................
+    <ExpandableListView
+        android:id="@+id/expandableListview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearlayout_middle"
+        />
+
+
+    //..............................
+    //Floating button...........
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF5722"
+        android:src="@drawable/microphone"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
